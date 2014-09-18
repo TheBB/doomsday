@@ -6,9 +6,10 @@ import System.IO (hFlush, stdout)
 import System.Random (getStdRandom, randomR)
 
 newtype WeekDay = WeekDay Integer
-                  deriving (Eq, Ord, Num)
+                  deriving (Eq, Ord, Enum, Num)
 
-[monday, tuesday, wednesday, thursday, friday, saturday, sunday] = map WeekDay [0..6]
+[monday, tuesday, wednesday, thursday, friday, saturday, sunday] = [WeekDay 0 .. WeekDay 6]
+
 
 instance Show WeekDay where
   show (WeekDay n)
