@@ -1,0 +1,4 @@
+doomsday
+========
+
+Doomsday algorithm trainer
