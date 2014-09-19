@@ -75,7 +75,7 @@ getDay = do
 runTest :: Integer -> Integer -> IO ()
 runTest total yay = do
   putStrLn $ show yay ++ "/" ++ show total
-  
+
   day <- randomDate
   putStr . (++ "? ") . show $ day
   hFlush stdout
@@ -88,9 +88,3 @@ runTest total yay = do
 
 
 main = runTest 0 0
-  -- day <- randomDate
-  -- putStr . show $ day
-  -- hFlush stdout
-  -- _ <- getLine
-  -- print . weekDay $ day
-  -- main
